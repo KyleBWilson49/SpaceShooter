@@ -8,8 +8,15 @@ public class GameController : MonoBehaviour {
 	public float spawnWait;
 	public float startWait;
 	public float waveWait;
+	private int waveNumber;
+
+	public GUIText scoreText;
+	private int score;
 
 	void Start () {
+		waveNumber = 0;
+		score = 0;
+		UpdateScore ();
 		StartCoroutine (SpawnWaves ());
 	}
 
@@ -17,6 +24,8 @@ public class GameController : MonoBehaviour {
 		yield return new WaitForSeconds (startWait);
 
 		while (true) {
+			waveNumber += 1;
+
 			for (int i = 0; i < hazardCount; i++) {
 				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
 				Quaternion spawnRotation = Quaternion.identity;
@@ -30,6 +39,15 @@ public class GameController : MonoBehaviour {
 
 			yield return new WaitForSeconds (waveWait);
 		}
+	}
+
+	void UpdateScore () {
+		scoreText.text = "Score: " + score;
+	}
+
+	public void AddScore (int newScoreValue) {
+		score += newScoreValue * waveNumber;
+		UpdateScore ();
 	}
 
 	void UpdateWave () {
