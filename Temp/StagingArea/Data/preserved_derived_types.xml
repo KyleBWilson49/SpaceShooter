@@ -1,0 +1,21 @@
+<linker>
+<assembly fullname="Assembly-CSharp">
+<type fullname="Done_BGScroller" preserve="all"/>
+<type fullname="Done_DestroyByBoundary" preserve="all"/>
+<type fullname="Done_DestroyByContact" preserve="all"/>
+<type fullname="Done_DestroyByTime" preserve="all"/>
+<type fullname="Done_EvasiveManeuver" preserve="all"/>
+<type fullname="Done_GameController" preserve="all"/>
+<type fullname="Done_Mover" preserve="all"/>
+<type fullname="Done_PlayerController" preserve="all"/>
+<type fullname="Done_RandomRotator" preserve="all"/>
+<type fullname="Done_WeaponController" preserve="all"/>
+<type fullname="DestroyByBoundary" preserve="all"/>
+<type fullname="DestroyByContact" preserve="all"/>
+<type fullname="DestroyByTime" preserve="all"/>
+<type fullname="GameController" preserve="all"/>
+<type fullname="Mover" preserve="all"/>
+<type fullname="PlayerController" preserve="all"/>
+<type fullname="RandomRotator" preserve="all"/>
+</assembly>
+</linker>
