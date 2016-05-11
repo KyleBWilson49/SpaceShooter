@@ -87,5 +87,7 @@
 'Assets/Scripts/Mover.cs'
 'Assets/Scripts/PlayerController.cs'
 'Assets/Scripts/RandomRotator.cs'
+'Assets/Scripts/WeaponController.cs'
+'Assets/WeaponController.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
