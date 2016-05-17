@@ -34,7 +34,7 @@ public class DestroyByContact : MonoBehaviour {
 			gameController.GameOver ();
 		}
 
-//		gameController.AddScore (scoreValue);
+		gameController.AddScore (scoreValue);
 		Destroy (other.gameObject);
 		Destroy (gameObject);
 	}
